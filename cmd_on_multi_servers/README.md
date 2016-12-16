@@ -15,4 +15,10 @@ or
 then you need to input all the possible passwords(only allow 3 different passwords, if all the server has same password, please press Enter for password 2/3).
 
 # Example:
+
 ./batch_op.py -f all_searcher -u admin 'cat /proc/meminfo|grep -i memtotal'
+
+
+# Help:
+
+./batch_op.py -h
