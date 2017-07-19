@@ -23,7 +23,7 @@ for dst_ip in ${IP_LIST[@]}; do
     #ssh ${dst_ip} 'curl localhost:10103/info 2>/dev/null | egrep "(当前全量|最新|so版本号|compile_date)" | md5sum'
 
     #设定crontab
-    ssh ${dst_ip} "crontab -l | grep -v update_main.sh | crontab -"   #删除全量更新脚本
-    ssh ${dst_ip} "(crontab -l ; echo '0 8 * * * /bin/sh /export/App/jd_search/searcher/main_update/bin/update_main.sh > /dev/null 2>&1') | crontab -"   #添加全量更新脚本
+    #ssh ${dst_ip} "crontab -l | grep -v update_main.sh | crontab -"   #删除全量更新脚本
+    #ssh ${dst_ip} "(crontab -l ; echo '0 8 * * * /bin/sh /export/App/jd_search/searcher/main_update/bin/update_main.sh > /dev/null 2>&1') | crontab -"   #添加全量更新脚本
     
 done
