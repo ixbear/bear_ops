@@ -1,4 +1,3 @@
-# jd_ops
 
 Run a command on multi servers and get their reponse. these servers may have a same or 2(even 3) different passwords.
 
@@ -16,7 +15,7 @@ then you need to input all the possible passwords(only allow 3 different passwor
 
 # Example:
 
-./batch_op.py -f all_searcher -u admin 'cat /proc/meminfo|grep -i memtotal'
+./batch_op.py -f all_server -u admin 'cat /proc/meminfo|grep -i memtotal'
 
 
 # Help:

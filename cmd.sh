@@ -1,7 +1,7 @@
 #!/bin/bash
-searcher_ip_list=$1
+ip_list_file=$1
 
-IP_LIST=`cat $searcher_ip_list`
+IP_LIST=`cat $ip_list_file`
 for dst_ip in ${IP_LIST[@]}; do
     echo -e "[ $dst_ip ]    \c"
 
@@ -9,14 +9,9 @@ for dst_ip in ${IP_LIST[@]}; do
 
     #scp main_update.conf admin@$dst_ip:/export/App/jd_search/searcher/main_update/conf/
     #rsync -avr searcher_common.ini ${dst_ip}:/export/App/jd_search/searcher/
-    #rsync -avr searcher_common.sh ${dst_ip}:/export/App/jd_search/searcher/
     #rsync -avr nodes.xml ${dst_ip}:/export/App/jd_search/searcher/server/conf/
 
-    #删除日志
     #ssh ${dst_ip} "cd /export/Logs/jd_search/searcher/ && \rm -rf * && ls"
-
-	
-    #ssh ${dst_ip} "md5sum /export/App/jd_search/searcher/server/bin/searcher_server"
     #ssh ${dst_ip} "md5sum /export/App/jd_search/searcher/server/conf/server.ini" 
 
     #ssh ${dst_ip} "curl localhost:10103/info 2>/dev/null | grep 上次全量更新数据的时间"
