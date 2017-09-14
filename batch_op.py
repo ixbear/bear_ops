@@ -1,5 +1,5 @@
 #!/usr/bin/python
-__author__ = "https://www.zhukun.net"
+__author__ = "https://zhukun.net"
 import getpass
 import sys
 import StringIO
