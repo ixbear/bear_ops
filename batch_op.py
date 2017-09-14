@@ -1,4 +1,5 @@
 #!/usr/bin/python
+__author__ = "https://www.zhukun.net"
 import getpass
 import sys
 import StringIO
