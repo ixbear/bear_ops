@@ -6,7 +6,7 @@ name=ec2-user
 if [ ! -z $2 ]; then
   name=$2
 fi
-keypair=Grindr-Q2-2016.key
+keypair=MyCorp-Q2-2016.key
 if [ ! -z $3 ]; then
   keypair=$3
 fi
